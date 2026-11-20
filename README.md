@@ -4,7 +4,7 @@
 
 Nucleotide composition (A, T, G, C, AT and GC content) and strand skew (AT and GC skew) for a folder of mitogenome FASTA files, with two publication-ready figures. Written to run from the IDLE 3.13 shell; it can also be run from the command line.
 
-**Current version:** 1.1.2 (2026-11-19) &nbsp;·&nbsp; **Author:** L. Brian Patrick, Department of Biological Sciences, Dakota Wesleyan University ([ORCID 0000-0003-1969-9600](https://orcid.org/0000-0003-1969-9600))
+**Current version:** 1.1.3 (2026-11-19) &nbsp;·&nbsp; **Author:** L. Brian Patrick, Department of Biological Sciences, Dakota Wesleyan University ([ORCID 0000-0003-1969-9600](https://orcid.org/0000-0003-1969-9600))
 
 ![AT and GC skew of 18 lycosid mitogenomes](example/output/Example_AT_GC_skew.png)
 
@@ -12,8 +12,8 @@ Nucleotide composition (A, T, G, C, AT and GC content) and strand skew (AT and G
 
 ```
 mito-composition/
-├── mito_composition_v1.1.2_2026-11-19.py           the program
-├── README_mito_composition_v1.1.2_2026-11-19.txt   full plain-text manual (also inside the download)
+├── mito_composition_v1.1.3_2026-11-19.py           the program
+├── README_mito_composition_v1.1.3_2026-11-19.txt   full plain-text manual (also inside the download)
 ├── README.md                                       this page
 ├── CITATION.cff                                    citation information
 ├── LICENSE
@@ -72,7 +72,7 @@ The `example/` folder holds a complete run on 18 wolf-spider (Lycosidae) mitogen
 
 ### Step 1. The FASTA folder
 
-`example/fasta/` holds one mitogenome per FASTA file. All 18 are oriented on the same strand and start at *cox1* (hence `COX1first` in the file names); orient your own sequences the same way, or the skews will not be comparable.
+`example/fasta/` holds one mitogenome per FASTA file. All 18 are on the same strand, as deposited in GenBank. Your own sequences must also all be on the same strand: the reverse complement swaps A with T and G with C, which reverses the sign of both skews (AT and GC content are unaffected). Where each sequence starts does not matter. The values are counts over the whole circular genome, so starting at *cox1* (as these files do, hence `COX1first` in their names), at the control region or anywhere else gives identical results.
 
 ### Step 2. The names table (input CSV)
 
@@ -137,7 +137,7 @@ You can make this file in Excel: type the three column headers in row 1, one mit
 
 ### Step 3. Run the program
 
-**In IDLE (main method).** Open `mito_composition_v1.1.2_2026-11-19.py` in IDLE, edit the SETTINGS block near the top so it points to the example, save, and press **F5**:
+**In IDLE (main method).** Open `mito_composition_v1.1.3_2026-11-19.py` in IDLE, edit the SETTINGS block near the top so it points to the example, save, and press **F5**:
 
 ```python
 FASTA_DIR  = r"C:\Users\me\mito-composition\example\fasta"
@@ -157,7 +157,7 @@ After one F5 run, `run()` can be called again from the IDLE shell prompt without
 **From the command line (optional: bash, macOS Terminal, Windows PowerShell).** From inside the `mito-composition` folder:
 
 ```bash
-python3 mito_composition_v1.1.2_2026-11-19.py example/fasta example/names_example.csv --out-dir example/output --prefix Example
+python3 mito_composition_v1.1.3_2026-11-19.py example/fasta example/names_example.csv --out-dir example/output --prefix Example
 ```
 
 (On Windows use `py -3.13` in place of `python3`.) Options: `--out-dir DIR` (default: the folder holding the names CSV), `--prefix NAME` (default: `Mitogenomes`), `--version`, `-h`. With no arguments the program uses the SETTINGS block, exactly as in IDLE.
@@ -165,7 +165,7 @@ python3 mito_composition_v1.1.2_2026-11-19.py example/fasta example/names_exampl
 The shell shows:
 
 ```
-mito_composition v1.1.2 (2026-11-19)
+mito_composition v1.1.3 (2026-11-19)
   wrote Example_composition.csv
   wrote Example_AT_GC_content.png / .tif / .pdf
   wrote Example_AT_GC_skew.png / .tif / .pdf
@@ -227,7 +227,7 @@ The PNG and TIFF files are 600 dpi (7.2 × 4.2 in); the PDF is vector. Figures h
 
 ## Using your own data
 
-1. Put your FASTA files (one mitogenome per file, same strand, same start gene) in one folder.
+1. Put your FASTA files (one mitogenome per file, all on the same strand) in one folder.
 2. Copy `example/names_example.csv`, replace the rows with your files and names, and mark the names to highlight with `yes` in the Bold column.
 3. Point `FASTA_DIR` and `NAMES_CSV` at them, choose a `PREFIX`, and press F5.
 
@@ -261,6 +261,7 @@ Program and documentation were drafted with the assistance of Claude Opus 5.5 (A
 | 1.1.0 | 2026-11-19 | Added optional command-line arguments; running from IDLE unchanged. |
 | 1.1.1 | 2026-11-19 | Documentation only: examples use only published GenBank mitogenomes. |
 | 1.1.2 | 2026-11-19 | Figures only: no extra space between "sp." and the accession; skew axis extends to the next tick mark. Calculations unchanged. |
+| 1.1.3 | 2026-11-19 | Documentation only: sequences must share a strand, but the start position does not matter. |
 
 Each version's file names carry its version number and date; each release on this page is tagged with the version.
 

@@ -1,15 +1,15 @@
-README_mito_composition_v1.1.2_2026-11-19.txt
+README_mito_composition_v1.1.3_2026-11-19.txt
 =============================================
-README for mito_composition_v1.1.2_2026-11-19.py
+README for mito_composition_v1.1.3_2026-11-19.py
 
 
 PROVENANCE
 ----------
   Program      mito_composition
-  Version      1.1.2
+  Version      1.1.3
   Date         2026-11-19
-  Files        mito_composition_v1.1.2_2026-11-19.py   (program)
-               README_mito_composition_v1.1.2_2026-11-19.txt   (this file)
+  Files        mito_composition_v1.1.3_2026-11-19.py   (program)
+               README_mito_composition_v1.1.3_2026-11-19.txt   (this file)
                example/            worked example: 18 lycosid mitogenomes
                                    from GenBank (fasta/, names_example.csv,
                                    and the expected output/)
@@ -25,7 +25,7 @@ PROVENANCE
                lycosid mitogenomes from GenBank listed in example/names_example.csv;
                results matched an independent count of A, T, G and C.
   Output tags  The program prints its name, version and date in the IDLE shell
-               at each run, and writes "mito_composition v1.1.2 (2026-11-19)"
+               at each run, and writes "mito_composition v1.1.3 (2026-11-19)"
                into the metadata of the PNG (Software) and PDF (Creator)
                figures.
 
@@ -39,6 +39,9 @@ PROVENANCE
                        accession in labels; skew axis now extends to the next
                        tick mark so the lowest and highest ticks are labelled.
                        Calculations unchanged.
+    1.1.3  2026-11-19  Documentation only: corrected the input instructions.
+                       Sequences must be on the same strand; where each
+                       sequence starts (e.g. at cox1) does not affect any value.
 
 When the program is changed, increase the version number, update the date,
 rename both files to match, and add a line to the version history in both.
@@ -70,7 +73,7 @@ RUNNING IN IDLE (main method)
 -----------------------------
 Option A: edit the settings and press F5
 
-1. Open mito_composition_v1.1.2_2026-11-19.py in IDLE (File > Open...).
+1. Open mito_composition_v1.1.3_2026-11-19.py in IDLE (File > Open...).
 2. Edit the SETTINGS block at the top:
 
      FASTA_DIR  = r"C:\Users\me\mitogenomes"         folder of FASTA files
@@ -112,7 +115,7 @@ The same program can be run without IDLE. Open a terminal (bash on Linux or
 the cluster, Terminal on macOS, PowerShell or Command Prompt on Windows), move
 to the folder holding the program, and run:
 
-  python3 mito_composition_v1.1.2_2026-11-19.py FASTA_DIR NAMES_CSV [--out-dir DIR] [--prefix NAME]
+  python3 mito_composition_v1.1.3_2026-11-19.py FASTA_DIR NAMES_CSV [--out-dir DIR] [--prefix NAME]
 
   (On Windows use  py -3.13  in place of  python3.)
 
@@ -126,13 +129,13 @@ to the folder holding the program, and run:
 Examples (bash / macOS):
 
   cd ~/mito_scripts
-  python3 mito_composition_v1.1.2_2026-11-19.py ~/mitogenomes ~/mitogenomes/names.csv
-  python3 mito_composition_v1.1.2_2026-11-19.py ~/mitogenomes lycosa_names.csv \
+  python3 mito_composition_v1.1.3_2026-11-19.py ~/mitogenomes ~/mitogenomes/names.csv
+  python3 mito_composition_v1.1.3_2026-11-19.py ~/mitogenomes lycosa_names.csv \
           --out-dir ~/results --prefix Lycosa
 
 Example (Windows PowerShell):
 
-  py -3.13 mito_composition_v1.1.2_2026-11-19.py C:\Users\me\mitogenomes C:\Users\me\names.csv --prefix Lycosa
+  py -3.13 mito_composition_v1.1.3_2026-11-19.py C:\Users\me\mitogenomes C:\Users\me\names.csv --prefix Lycosa
 
 Put quotes around any path that contains spaces, e.g. "~/My Data/names.csv".
 If the program is run with no arguments it uses the SETTINGS block in the
@@ -141,7 +144,7 @@ file, exactly as in IDLE.
 To run several comparisons in one go from bash:
 
   for set in lycosa pardosa piratula; do
-      python3 mito_composition_v1.1.2_2026-11-19.py ~/mitogenomes ${set}_names.csv --prefix ${set}
+      python3 mito_composition_v1.1.3_2026-11-19.py ~/mitogenomes ${set}_names.csv --prefix ${set}
   done
 
 
@@ -151,8 +154,14 @@ One mitogenome per FASTA file. Upper or lower case is fine. Files in the folder
 that are not listed in the names CSV are ignored, so one folder can hold all
 your mitogenomes.
 
-Orient every sequence on the same strand and start them at the same gene
-(e.g. cox1); otherwise the skews are not comparable.
+All sequences must be on the same strand (normally the strand as deposited
+in GenBank, the one carrying cox1 and most other genes). The reverse
+complement swaps A with T and G with C, so it reverses the sign of both
+skews; AT and GC content are not affected.
+
+Where each sequence starts does not matter. The values are counts over the
+whole circular genome, so a sequence that starts at cox1, at the control
+region or anywhere else gives identical results.
 
 
 INPUT 2: NAMES CSV
@@ -220,7 +229,7 @@ CITING
 ------
 If results from this program are published, cite the skew formulas (Perna and
 Kocher, 1995) and the software used (Python, matplotlib, numpy), and give the
-program name and version: mito_composition v1.1.2 (2026-11-19).
+program name and version: mito_composition v1.1.3 (2026-11-19).
 
 
 CHANGING THE APPEARANCE

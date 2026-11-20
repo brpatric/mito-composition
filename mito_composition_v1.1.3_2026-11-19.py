@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 r"""
-mito_composition_v1.1.2_2026-11-19.py
+mito_composition_v1.1.3_2026-11-19.py
 
 Nucleotide composition and strand skew for a folder of mitogenome FASTA files.
 
 PROVENANCE
   Program   : mito_composition
-  Version   : 1.1.2
+  Version   : 1.1.3
   Date      : 2026-11-19
   Author    : L. Brian Patrick, Department of Biological Sciences,
               Dakota Wesleyan University, Mitchell, SD, USA
@@ -19,7 +19,7 @@ PROVENANCE
   Tested with: Python 3.13.18, matplotlib 3.11.2, numpy 2.5.3, on the 18
               lycosid mitogenomes from GenBank listed in example/names_example.csv;
               values matched an independent count of A, T, G and C.
-  Companion  : README_mito_composition_v1.1.2_2026-11-19.txt
+  Companion  : README_mito_composition_v1.1.3_2026-11-19.txt
   Version history
     1.0.0  2026-11-19  First release.
     1.1.0  2026-11-19  Added optional command-line (bash) arguments;
@@ -30,6 +30,9 @@ PROVENANCE
                        accession in labels; skew axis now extends to the next
                        tick mark so the lowest and highest ticks are labelled.
                        Calculations unchanged.
+    1.1.3  2026-11-19  Documentation only: corrected the input instructions.
+                       Sequences must be on the same strand; where each
+                       sequence starts (e.g. at cox1) does not affect any value.
 
 HOW TO USE (IDLE 3.13)
   1. Open this file in IDLE.
@@ -39,11 +42,12 @@ HOW TO USE (IDLE 3.13)
     >>> run(r"C:\path\fasta_folder", r"C:\path\names.csv", prefix="Lycosa")
 
 OPTIONAL: COMMAND LINE (bash, macOS Terminal, Windows PowerShell)
-  python3 mito_composition_v1.1.2_2026-11-19.py FASTA_DIR NAMES_CSV [--out-dir DIR] [--prefix NAME]
+  python3 mito_composition_v1.1.3_2026-11-19.py FASTA_DIR NAMES_CSV [--out-dir DIR] [--prefix NAME]
   With no arguments, the SETTINGS below are used.
 
 INPUTS
-  FASTA_DIR  : folder containing the mitogenome FASTA files (one mitogenome per file)
+  FASTA_DIR  : folder containing the mitogenome FASTA files (one mitogenome per file,
+               all on the same strand; the start position does not matter)
   NAMES_CSV  : CSV file with three columns:
                    File  - FASTA file name in FASTA_DIR
                    Name  - label used in the table and figures, written as
@@ -94,7 +98,7 @@ import re
 import sys
 
 __program__ = "mito_composition"
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 __date__ = "2026-11-19"
 
 import matplotlib
