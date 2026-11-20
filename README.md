@@ -6,6 +6,10 @@ Nucleotide composition (A, T, G, C, AT and GC content) and strand skew (AT and G
 
 **Current version:** 1.1.3 (2026-11-19) &nbsp;·&nbsp; **Author:** L. Brian Patrick, Department of Biological Sciences, Dakota Wesleyan University ([ORCID 0000-0003-1969-9600](https://orcid.org/0000-0003-1969-9600))
 
+**Cite as:**
+
+> Patrick, L. B. (2026). *mito_composition: nucleotide composition and strand skew of mitogenomes* (Version 1.1.3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24384748
+
 ![AT and GC skew of 18 lycosid mitogenomes](example/output/Example_AT_GC_skew.png)
 
 ## Contents
