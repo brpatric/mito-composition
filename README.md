@@ -4,7 +4,9 @@
 
 Nucleotide composition (A, T, G, C, AT and GC content) and strand skew (AT and GC skew) for a folder of mitogenome FASTA files, with two publication-ready figures. Written to run from the IDLE 3.13 shell; it can also be run from the command line.
 
-**Current version:** 1.1.3 (2026-11-19) &nbsp;·&nbsp; **Author:** L. Brian Patrick, Department of Biological Sciences, Dakota Wesleyan University ([ORCID 0000-0003-1969-9600](https://orcid.org/0000-0003-1969-9600))
+**Version 1.1.3** (2026-11-19) · Python 3 (Matplotlib, NumPy)
+
+**Author:** L. Brian Patrick, Department of Biological Sciences, Dakota Wesleyan University, Mitchell, SD, USA · ORCID [0000-0003-1969-9600](https://orcid.org/0000-0003-1969-9600)
 
 **Cite as:**
 
@@ -50,10 +52,15 @@ Species names are set in italic (with "sp." and the GenBank accession upright), 
 
 ## Requirements
 
-* Python 3.8 or later (written and tested for IDLE 3.13)
-* matplotlib 3.8 or later and numpy
+| Item | Version or format | Install or notes |
+| --- | --- | --- |
+| Python | 3.8 or later (written and tested for IDLE 3.13; tested with 3.13.18) | [python.org](https://www.python.org/downloads/) |
+| Matplotlib | 3.8 or later (tested with 3.11.2) | `pip install matplotlib` |
+| NumPy | any recent version (tested with 2.5.3) | `pip install numpy` |
+| Mitogenomes | A folder of FASTA files, one mitogenome per file | Nucleotide and IUPAC codes; ambiguous bases are counted and reported but left out of the calculations |
+| Names table | CSV listing the FASTA files and the name to show for each | See the worked example (`example/names_example.csv`) |
 
-Install them for the same Python that IDLE uses:
+The program runs anywhere Python runs (Windows, macOS, Linux). Install the two libraries for the same Python that IDLE uses:
 
 ```
 Windows:  py -3.13 -m pip install matplotlib numpy
