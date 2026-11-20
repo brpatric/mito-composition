@@ -110,30 +110,31 @@ Trochosa_ruricola_China_mitogenome_COX1first.fasta,Trochosa ruricola (PV694304),
 Wadicosa_fidelis_China_mitogenome_COX1first.fasta,Wadicosa fidelis (KP100666),
 ```
 
-The same file as a table:
+The same file opened in Excel (columns A, B and C; row 1 is the header row):
 
-| Species | GenBank | File | Bold |
-|---|---|---|---|
-| *Alopecosa albostriata* | [PV694306](https://www.ncbi.nlm.nih.gov/nuccore/PV694306) | `Alopecosa_albostriata_China_mitogenome_COX1first.fasta` |  |
-| *Alopecosa cinnameopilosa* | [PV694300](https://www.ncbi.nlm.nih.gov/nuccore/PV694300) | `Alopecosa_cinnameopilosa_China_mitogenome_COX1first.fasta` |  |
-| *Arctosa xunyangensis* | [PV694310](https://www.ncbi.nlm.nih.gov/nuccore/PV694310) | `Arctosa_xunyangensis_China_mitogenome_COX1first.fasta` |  |
-| *Evippa* sp. | [PV694320](https://www.ncbi.nlm.nih.gov/nuccore/PV694320) | `Evippa_sp_China_mitogenome_COX1first.fasta` |  |
-| *Geolycosa* sp. | [PP182225](https://www.ncbi.nlm.nih.gov/nuccore/PP182225) | `Geolycosa_sp_Africa_mitogenome_COX1first.fasta` |  |
-| *Halocosa hatanensis* | [MT174468](https://www.ncbi.nlm.nih.gov/nuccore/MT174468) | `Halocosa_hatanensis_China_mitogenome_COX1first.fasta` |  |
-| *Hippasa holmerae* | [PV694316](https://www.ncbi.nlm.nih.gov/nuccore/PV694316) | `Hippasa_holmerae_China_mitogenome_COX1first.fasta` |  |
-| *Hygrolycosa umidicola* | [PV694319](https://www.ncbi.nlm.nih.gov/nuccore/PV694319) | `Hygrolycosa_umidicola_China_mitogenome_COX1first.fasta` |  |
-| *Lycosa grahami* | [ON951647](https://www.ncbi.nlm.nih.gov/nuccore/ON951647) | `Lycosa_grahami_China_mitogenome_COX1first.fasta` | yes |
-| *Lycosa shansia* | [OK032619](https://www.ncbi.nlm.nih.gov/nuccore/OK032619) | `Lycosa_shansia_China_mitogenome_COX1first.fasta` | yes |
-| *Lycosa singoriensis* | [OK032620](https://www.ncbi.nlm.nih.gov/nuccore/OK032620) | `Lycosa_singoriensis_China_mitogenome_COX1first.fasta` | yes |
-| *Pardosa brevivulva* | [PV694290](https://www.ncbi.nlm.nih.gov/nuccore/PV694290) | `Pardosa_brevivulva_China_mitogenome_COX1first.fasta` |  |
-| *Pardosa chapini* | [PV694294](https://www.ncbi.nlm.nih.gov/nuccore/PV694294) | `Pardosa_chapini_China_mitogenome_COX1first.fasta` |  |
-| *Piratula montigena* | [PV694327](https://www.ncbi.nlm.nih.gov/nuccore/PV694327) | `Piratula_montigena_China_mitogenome_COX1first.fasta` |  |
-| *Piratula yaginumai* | [PV694328](https://www.ncbi.nlm.nih.gov/nuccore/PV694328) | `Piratula_yaginumai_China_mitogenome_COX1first.fasta` |  |
-| *Trochosa aquatica* | [PV694301](https://www.ncbi.nlm.nih.gov/nuccore/PV694301) | `Trochosa_aquatica_China_mitogenome_COX1first.fasta` |  |
-| *Trochosa ruricola* | [PV694304](https://www.ncbi.nlm.nih.gov/nuccore/PV694304) | `Trochosa_ruricola_China_mitogenome_COX1first.fasta` |  |
-| *Wadicosa fidelis* | [KP100666](https://www.ncbi.nlm.nih.gov/nuccore/KP100666) | `Wadicosa_fidelis_China_mitogenome_COX1first.fasta` |  |
+| | A | B | C |
+|--:|---|---|---|
+| **1** | File | Name | Bold |
+| **2** | Alopecosa_albostriata_China_mitogenome_COX1first.fasta | Alopecosa albostriata (PV694306) |  |
+| **3** | Alopecosa_cinnameopilosa_China_mitogenome_COX1first.fasta | Alopecosa cinnameopilosa (PV694300) |  |
+| **4** | Arctosa_xunyangensis_China_mitogenome_COX1first.fasta | Arctosa xunyangensis (PV694310) |  |
+| **5** | Evippa_sp_China_mitogenome_COX1first.fasta | Evippa sp. (PV694320) |  |
+| **6** | Geolycosa_sp_Africa_mitogenome_COX1first.fasta | Geolycosa sp. (PP182225) |  |
+| **7** | Halocosa_hatanensis_China_mitogenome_COX1first.fasta | Halocosa hatanensis (MT174468) |  |
+| **8** | Hippasa_holmerae_China_mitogenome_COX1first.fasta | Hippasa holmerae (PV694316) |  |
+| **9** | Hygrolycosa_umidicola_China_mitogenome_COX1first.fasta | Hygrolycosa umidicola (PV694319) |  |
+| **10** | Lycosa_grahami_China_mitogenome_COX1first.fasta | Lycosa grahami (ON951647) | yes |
+| **11** | Lycosa_shansia_China_mitogenome_COX1first.fasta | Lycosa shansia (OK032619) | yes |
+| **12** | Lycosa_singoriensis_China_mitogenome_COX1first.fasta | Lycosa singoriensis (OK032620) | yes |
+| **13** | Pardosa_brevivulva_China_mitogenome_COX1first.fasta | Pardosa brevivulva (PV694290) |  |
+| **14** | Pardosa_chapini_China_mitogenome_COX1first.fasta | Pardosa chapini (PV694294) |  |
+| **15** | Piratula_montigena_China_mitogenome_COX1first.fasta | Piratula montigena (PV694327) |  |
+| **16** | Piratula_yaginumai_China_mitogenome_COX1first.fasta | Piratula yaginumai (PV694328) |  |
+| **17** | Trochosa_aquatica_China_mitogenome_COX1first.fasta | Trochosa aquatica (PV694301) |  |
+| **18** | Trochosa_ruricola_China_mitogenome_COX1first.fasta | Trochosa ruricola (PV694304) |  |
+| **19** | Wadicosa_fidelis_China_mitogenome_COX1first.fasta | Wadicosa fidelis (KP100666) |  |
 
-You can make this file in Excel: type the three column headers in row 1, one mitogenome per row, then **File → Save As → CSV UTF-8 (Comma delimited) (\*.csv)**.
+To make your own in Excel, lay it out exactly like this: `File`, `Name` and `Bold` in cells A1, B1 and C1, then one mitogenome per row. Type the names as plain text (no italics; the program sets those itself). Save with **File → Save As → CSV UTF-8 (Comma delimited) (\*.csv)**. Opening the saved file in a text editor should show lines like the example above.
 
 ### Step 3. Run the program
 
