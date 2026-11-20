@@ -1,5 +1,7 @@
 # mito_composition
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24384305.svg)](https://doi.org/10.5281/zenodo.24384305)
+
 Nucleotide composition (A, T, G, C, AT and GC content) and strand skew (AT and GC skew) for a folder of mitogenome FASTA files, with two publication-ready figures. Written to run from the IDLE 3.13 shell; it can also be run from the command line.
 
 **Current version:** 1.1.2 (2026-11-19) &nbsp;·&nbsp; **Author:** L. Brian Patrick, Department of Biological Sciences, Dakota Wesleyan University ([ORCID 0000-0003-1969-9600](https://orcid.org/0000-0003-1969-9600))
@@ -233,7 +235,11 @@ Use a different `PREFIX` for each comparison; files with the same names are over
 
 ## Citing
 
-If you publish results from this program, please cite it as given in [`CITATION.cff`](CITATION.cff) (or with the **Cite this repository** button on this page), giving the version used, e.g. *mito_composition v1.1.2 (2026-11-19)*. Please also cite the skew formulas (Perna & Kocher, 1995) and the software it depends on (Python, matplotlib, numpy).
+If you publish results from this program, please cite it as given in [`CITATION.cff`](CITATION.cff) (or with the **Cite this repository** button on this page), giving the version used, e.g.:
+
+> Patrick, L. B. (2026). *mito_composition: nucleotide composition and strand skew of mitogenomes* (Version 1.1.2) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24384305
+
+Each release has its own DOI on [Zenodo](https://doi.org/10.5281/zenodo.24384305); cite the version you used. Please also cite the skew formulas (Perna & Kocher, 1995) and the software it depends on (Python, matplotlib, numpy).
 
 ## References
 
