@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "mito_composition: nucleotide composition and strand skew of mitogenomes"
+type: software
+version: 1.1.2
+date-released: 2026-11-19
+authors:
+  - family-names: Patrick
+    given-names: L. Brian
+    affiliation: "Department of Biological Sciences, Dakota Wesleyan University, Mitchell, SD, USA"
+    orcid: "https://orcid.org/0000-0003-1969-9600"
+repository-code: "https://github.com/brpatric/mito-composition"
+license: MIT
+keywords:
+  - mitogenome
+  - mitochondrial genome
+  - nucleotide composition
+  - AT skew
+  - GC skew
+  - Lycosidae
+references:
+  - type: article
+    title: "Patterns of nucleotide composition at fourfold degenerate sites of animal mitochondrial genomes"
+    authors:
+      - family-names: Perna
+        given-names: Nicole T.
+      - family-names: Kocher
+        given-names: Thomas D.
+    journal: "Journal of Molecular Evolution"
+    year: 1995
+    volume: 41
+    issue: 3
+    start: 353
+    end: 358
+    doi: "10.1007/BF00186547"
