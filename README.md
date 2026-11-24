@@ -251,7 +251,9 @@ If you publish results from this program, please cite it as given in [`CITATION.
 
 > Patrick, L. B. (2026). *mito_composition: nucleotide composition and strand skew of mitogenomes* (Version 1.1.3) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.24384748
 
-Each release has its own DOI on [Zenodo](https://doi.org/10.5281/zenodo.24384748); cite the version you used. Please also cite the skew formulas (Perna & Kocher, 1995) and the software it depends on (Python, matplotlib, numpy).
+*"[Computer software]" is part of the APA (7th edition) citation format and stays as written. If you used a different release, replace the version number and DOI with those of the release you used (each release has its own DOI on Zenodo). Journals that use another citation style may format software differently.*
+
+Please also cite the skew formulas (Perna & Kocher, 1995) and the software it depends on (Python, matplotlib, numpy).
 
 ## References
 
